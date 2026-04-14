@@ -1,6 +1,15 @@
-#include <iostream>
+#include <Game.hpp>
 
-int main(int argc, char **argv) {
-    std::cout << "hello world!" << std::endl;
-    return 0;
+
+int main(void)
+{
+  Game game("Car Racing", 800, 600);
+  
+  while(game.is_window_open())
+  {
+    game.update();
+    game.draw();
+  }
+
+  return 0;
 }

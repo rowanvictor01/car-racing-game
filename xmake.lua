@@ -1,7 +1,7 @@
 add_requires("sfml")
 set_toolchains("gcc-15")
 set_languages("cxx23")
-add_cxxflags("-pedantic-errors", "-Wall", "-Wextra", "-Wconversion", "-Wsign-conversion", "-Weffc++", "-Werror", "-g")
+add_cxxflags("-pedantic-errors", "-Wall", "-Wextra", "-Wconversion", "-Wsign-conversion", "-g")
 
 
 target("car-racing-game")
